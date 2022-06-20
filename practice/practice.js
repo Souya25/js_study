@@ -67,3 +67,13 @@ const { age, name} = my_profile;
 // 変数の名前を変えることができる
 const { age: user_age, name: user_name} = my_profile;
 
+const my_profile2 = ["zeri", 231];
+console.log(my_profile2[0]);
+
+//デフォルト値
+const func3 = (value = "デフォルト値") =>
+{
+    return value;
+}
+console.log(func3());
+
