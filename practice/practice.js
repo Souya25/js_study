@@ -77,3 +77,17 @@ const func7 = (value = "デフォルト値") =>
 }
 console.log(func7());
 
+
+//スプレッド構文
+const arr1 = [1,2,3];
+console.log(arr1)
+console.log(...arr1)
+
+const sum_three = (val1, val2, val3) => val1 + val2 + val3;
+console.log(sum_three(arr1[0], arr1[1], arr1[2]));
+console.log(sum_three(...arr1));//楽に書ける
+
+//要素をまとめる
+const arr2 = [ 2, 4, 6, 8, 10];
+const [num1, num2, ...arr3] = arr2;
+console.log(`num1:${num1},num2:${num2},arr3:${arr3}`)
