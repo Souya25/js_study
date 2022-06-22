@@ -33,3 +33,16 @@ sanNameArr = nameArr.map((name) => {
   });
   console.log(sanNameArr);
 
+//三項演算子
+// ある条件　? 条件がTrueの時の処理 : じょうけんが　Falseの時の処理
+const val1 = 1 < 0 ? "Trueです" : "Falseです";
+console.log(val1)
+
+//ついでに型をみる方法
+console.log(typeof val1)
+
+const null_num = null;
+const res =  null_num || "こんにちは"
+console.log(res)
+// 実は||は左側がfalseなら右を返す意味だった
+// 実は&&は左側がtrueなら右を返す意味だった
